@@ -1,0 +1,15 @@
+.logo{
+    height: 40vw;
+    width:auto;
+}
+
+.stack{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#paraEsteSitio{
+    color: blue;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,51 @@
+.footerItem{
+    height: 3rem;
+    width:auto;
+    padding-left: 0.5rem;
+}
+
+.footer{
+    margin-top: 1rem;
+    background-color: white;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+}
+.izq{
+    display:flex;
+    flex: 1;
+}
+.link:hover{
+    height: 5rem;
+    width: auto;
+}
+
+.mail{
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+
+.mas{
+    font-size:medium;
+    margin-left: 1rem;
+}
+
+#google{
+    height: 2.5rem;
+    width:auto;
+    padding-right: 0.5rem;
+    margin-top: 0.6rem;
+}
+
+#google:hover{
+    height: 3rem;
+    width:auto;
+}
+
+.derecha{
+    display:flex;
+    margin-bottom: 0%;
+}
