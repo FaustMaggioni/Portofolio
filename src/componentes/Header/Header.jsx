@@ -1,13 +1,22 @@
-import React from 'react'
-import profile from '../../assets/profile.jpg'
+import React, {useEffect} from 'react'
+import profile from '../../assets/yo.webp'
 import './styles.css'
-
+import startup from '../../assets/desktop.svg'
 const Header = () => {
+
+    useEffect(() =>{
+        const prof = document.querySelector('#profile')
+        prof.classList.add('girar')    
+        setTimeout(() => {
+            prof.classList.remove('girar')
+        }, 2000)
+    })
+
     return (
         <div>
-            <header class='center'>
-                <h1 >Faustino Maggioni Duffy </h1>
-                <h2> Frontend Developer </h2>
+            <header className='center'>
+                <h1 >Faustino Maggioni Duffy <img class='startup' src={startup} /> </h1>
+                <h2 className='rol'> Frontend Developer </h2>
             </header>
             <img src={profile} id='profile' />
         </div>

@@ -11,20 +11,21 @@
     height: 4rem;
     display: flex;
     align-items: center;
-    border-radius: 2rem;
 }
 .izq{
     display:flex;
     flex: 1;
 }
-.link:hover{
-    height: 5rem;
-    width: auto;
-}
 
+
+.link{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+}
 .mail{
     margin-right: 1rem;
     font-size: 1.1rem;
+    margin-left: 1rem;
 }
 
 
@@ -38,12 +39,9 @@
     width:auto;
     padding-right: 0.5rem;
     margin-top: 0.6rem;
+    margin-left: 1rem;
 }
 
-#google:hover{
-    height: 3rem;
-    width:auto;
-}
 
 .derecha{
     display:flex;

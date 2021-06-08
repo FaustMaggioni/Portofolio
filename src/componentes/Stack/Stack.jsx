@@ -6,10 +6,12 @@ import css from '../../assets/css-3.png'
 import './styles.css'
 
 
+
 const Stack = () => {
     return (
-        <div>
-            <h2 id='paraEsteSitio'> Para este sitio utilicé </h2>
+        <div class='stackdiv'>
+            <hr/>
+            <h4 id='paraEsteSitio'> Para este sitio utilicé </h4>
             <div class='stack'>
                 <img class='logo' src={html} />
                 <img class='logo' src={reactjs} />

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles.css'
 import ts from '../../assets/Certificados/CertificadoTS.jpg'
 import js from '../../assets/Certificados/js.png'
@@ -7,53 +7,53 @@ import py from '../../assets/Certificados/py.jpg'
 import web from '../../assets/Certificados/web.png'
 import reactjs from '../../assets/Certificados/REACT.jpg'
 import frontend from '../../assets/Certificados/frontend.png'
-
+import Carusel from './Carusel.jsx'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
+import educ from '../../assets/ed.png'
 
 
 const Estudios = () => {
+    const imagenes = [
+        { src: ts, txt: 'Typescript' },
+        { src: js, txt: 'Javascript' },
+        { src: ml, txt: 'Introducción a Machine Learning' },
+        { src: reactjs, txt: 'React js' },
+        { src: web, txt: 'Responsive Web Design' },
+        { src: py, txt: 'Python' },
+        { src: frontend, txt: 'Librerías Frontend' },
+    ]
+    const [orientacion, setOrientacion] = useState()
+    const [porcentaje, setPorcentaje] = useState(30)
+
+    useEffect(() => {
+        cambiarOrientacion()
+    })
+    const cambiarOrientacion = () => {
+        console.log(window.innerWidth)
+        if (window.innerWidth < 950) {
+            setPorcentaje(100)
+        } else {
+            if (window.innerWidth > 950) {
+                setPorcentaje(30)
+            }
+        }
+    }
+    window.addEventListener('resize', cambiarOrientacion)
+
     return (
-        <div class='content'>
-            <h2 class='estudio'> Estudios </h2>
-            <div class='carrera'>
-                <h3 class='ache'>
+        <div className='content'>
+            <div className='principal'>
+            <img className='libros' src={educ} />
+            <h2 className='estudio'> Estudios </h2>
+            </div>
+            <div className='carrera'>
+                <h3 className='ache'>
                     Licenciatura en Ciencias de la Computación, <br /> <b>Universidad nacional del Comahue </b>
                 </h3>
             </div>
             <hr />
-            <h2 class='estudio'> Capacitaciones </h2>
-            <hr />
-            <Carousel autoPlay={true} centerMode={true} centerSlidePercentage={40}>
-                <div class='b'>
-                    <img class='certif' src={py} />
-                    <p> Python </p>
-                </div>
-                <div class='b'>
-                    <img class='certif' src={ml} />
-                    <p> Introducción al Machine Learning </p>
-                </div>
-                <div class='b'>
-                    <img class='certif' src={js} />
-                    <p> Javascript </p>
-                </div>
-                <div class='b'>
-                    <img class='certif' src={ts} />
-                    <p> Typescript </p>
-                </div>
-                <div class='b'>
-                    <img class='certif' src={web} />
-                    <p> Responsive Web </p>
-                </div>
-                <div class='b'>
-                    <img class='certif' src={reactjs} />
-                    <p> React JS </p>
-                </div>
-                <div class='b'>
-                    <img class='certif' src={frontend} />
-                    <p> Librerías Frontend </p>
-                </div>
-            </Carousel>
+            <h2 className='estudio'> Capacitaciones </h2>
+            <Carusel imagenes={imagenes}  porcentaje={porcentaje} />
         </div>
     )
 }
