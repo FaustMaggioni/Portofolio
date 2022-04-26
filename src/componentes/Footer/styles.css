@@ -1,49 +1,29 @@
 .footerItem{
     height: 3rem;
     width:auto;
-    padding-left: 0.5rem;
+    margin: 1rem;
 }
 
 .footer{
     margin-top: 1rem;
     background-color: white;
-    width: 100%;
+    width: max-content;
     height: 4rem;
     display: flex;
     align-items: center;
+    border-radius: 1rem;
 }
+
 .izq{
     display:flex;
     flex: 1;
 }
 
-
 .link{
-    margin-left: 1rem;
     margin-top: 0.5rem;
 }
-.mail{
-    margin-right: 1rem;
-    font-size: 1.1rem;
-    margin-left: 1rem;
-}
-
 
 .mas{
     font-size:medium;
     margin-left: 1rem;
-}
-
-#google{
-    height: 2.5rem;
-    width:auto;
-    padding-right: 0.5rem;
-    margin-top: 0.6rem;
-    margin-left: 1rem;
-}
-
-
-.derecha{
-    display:flex;
-    margin-bottom: 0%;
 }

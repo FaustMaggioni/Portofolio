@@ -15,8 +15,8 @@ const Header = () => {
     return (
         <div>
             <header className='center'>
-                <h1 >Faustino Maggioni Duffy <img class='startup' src={startup} /> </h1>
-                <h2 className='rol'> Frontend Developer </h2>
+                <h1> Faustino Maggioni Duffy </h1>
+                <h2 className='rol'> Software Developer <img class='startup' src={startup} /> </h2>
             </header>
             <img src={profile} id='profile' />
         </div>
