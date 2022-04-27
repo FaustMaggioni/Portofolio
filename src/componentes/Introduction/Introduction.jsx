@@ -17,7 +17,9 @@ const Introduction = () => {
         <div className='inner-info'>
           <h2 id='hello' onMouseOver={rotate} onMouseOut={recto}> Hi! I'm Faustino {' '} <div id='emoji'>  👋 </div></h2>
           <p id='about'>
-            An energic, creative and proficiente developer that's always looking forward to get better.
+            Energic <br/>
+            Creative <br/>
+            Proactive
           </p>
         </div>
       </div>

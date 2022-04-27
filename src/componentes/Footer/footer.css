@@ -5,7 +5,6 @@
 }
 
 .footer{
-    background-color: white;
     width: max-content;
     height: 4rem;
     display: flex;
@@ -25,4 +24,42 @@
 .mas{
     font-size:medium;
     margin-left: 1rem;
+}
+
+.footer-container {
+    height: 50vh;   
+}
+
+.animated {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+   }
+   @-webkit-keyframes flash {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+   25%, 75% {
+    opacity: 0;
+    }
+   }
+   @keyframes flash {
+    0%, 50%, 100% {
+    opacity: 1;
+    }
+   25%, 75% {
+    opacity: 0;
+    }
+   }
+   .flash {
+    -webkit-animation-name: flash;
+    animation-name: flash;
+   }
+
+#follow-me {
+    color: var(--lighter-color);
+    font-size: 1rem;
+    text-align: center;
+    text-shadow: 1px 1px black;
 }

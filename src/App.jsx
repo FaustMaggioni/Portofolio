@@ -5,7 +5,7 @@ import './App.css'
 const App = () => {
     
     return (
-        <div class='container'>
+        <div className='content'>
             <Header />
             <Introduction />
             <Experience />

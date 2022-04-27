@@ -18,11 +18,10 @@ html {
     width: 100%;
 }
 
-.container {
+.content {
     align-items: center;
     display: flex;
     flex-direction: column;
-    margin: 1rem;
 }
 
 h1{

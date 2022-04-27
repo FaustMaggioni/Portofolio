@@ -5,16 +5,17 @@ import './footer.css'
 
 const Footer = () => {
     return (
-        <footer class='footer'>
-            <div class='izq'>
+        <div className='footer-container'>
+            <h3 id='follow-me' className='flash animated'> Follow me! </h3>
+            <footer className='footer'>
                 <a className='link' href='https://www.linkedin.com/in/maggioniduffy/' target='_blank'>
                     <img className='footerItem' src={linked} />
                 </a>
                 <a className='link' href='https://github.com/maggioniduffy' target='_blank'>
                     <img className='footerItem' src={github} />
                 </a>
-            </div>
-        </footer>
+            </footer>
+        </div>
     )
 }
 
