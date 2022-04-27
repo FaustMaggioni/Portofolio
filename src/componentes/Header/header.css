@@ -1,0 +1,52 @@
+#profile{
+    display:block;
+    height: 16rem;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    transition-duration: 1s;
+    width: max-content;
+}
+
+#profile:hover {
+    transform: rotate(720deg) scale(1.2);
+}
+
+.girar{
+    transition-duration: 1.3s;
+    transform: rotate(720deg);
+}
+
+.center{
+    text-align: center;
+    width: max-content;
+    height: 5rem;
+    margin: 1rem;
+    display: block;
+}
+
+.header {
+    align-items: center;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 50%;
+    height: 100vh;
+}
+
+#profession{
+    color:var(--lighter-color);
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    text-shadow: 1px 1px 2px black;
+    width: 100%;
+}
+
+#name-title {
+    color: var(--dark-color);
+    font-size: 3rem;
+    font-weight: 200;
+    text-shadow: 1px 1px 2px black;
+}

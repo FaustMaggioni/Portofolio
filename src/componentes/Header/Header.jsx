@@ -1,7 +1,8 @@
 import React, {useEffect} from 'react'
 import profile from '../../assets/yo.webp'
-import './styles.css'
 import startup from '../../assets/desktop.svg'
+import './header.css'
+
 const Header = () => {
 
     useEffect(() =>{
@@ -13,10 +14,10 @@ const Header = () => {
     })
 
     return (
-        <div>
+        <div className='header'>
             <header className='center'>
-                <h1> Faustino Maggioni Duffy </h1>
-                <h2 className='rol'> Software Developer <img class='startup' src={startup} /> </h2>
+                <h1 id="name-title"> Faustino Maggioni Duffy </h1>
+                <h2 id="profession"> Software Developer </h2>
             </header>
             <img src={profile} id='profile' />
         </div>

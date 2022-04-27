@@ -1,0 +1,39 @@
+.rot{
+    transition: 0.5s;
+    transform: rotate(360deg);
+}
+
+.info {
+    color: var(--lighter-color);
+    height: 100vh;
+    margin: auto;
+}
+
+.inner-info {
+    align-items: center;
+    background-color: var(--light-color);
+    border-radius: 50%;
+    box-shadow: 0px 0px 16px -1px var(--dark-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 22rem;
+    width: 22rem;
+}
+
+#hello {
+    font-size: 1.8rem;
+    font-weight: 100;
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+#about {
+    color: var(--dark-color);
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1Rem;
+    width: 15rem;
+}
